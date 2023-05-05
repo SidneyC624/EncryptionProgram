@@ -57,7 +57,7 @@ public class EncryptionProgram {
 	}
 	
 	private void newKey() {
-		
+		System.out.println("testing");
 	}
 	
 	private void getKey() {
