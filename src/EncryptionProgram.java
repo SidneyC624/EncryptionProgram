@@ -57,10 +57,34 @@ public class EncryptionProgram {
 	}
 	
 	private void newKey() {
-		System.out.println("testing");
+		
+		character = ' ';
+		list.clear();
+		shuffledList.clear();
+		
+		// ASCII characters
+		for(int i=32; i<127; i++) {
+			list.add(character);
+			character++;
+		}
+		
+		shuffledList = new ArrayList(list);
+		Collections.shuffle(shuffledList);
+		System.out.println("*A new key has been generated*");
+		
 	}
 	
 	private void getKey() {
+		
+		System.out.println("Key: ");
+		for(Character x : list) {
+			System.out.print(x);
+		}
+		System.out.println();
+		for(Character x : shuffledList) {
+			System.out.print(x);
+		}
+		System.out.println();
 		
 	}
 	
